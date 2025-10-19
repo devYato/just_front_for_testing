@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se - Dev Yato Python Journey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="python-icon">🐍</span>
+                <h1>Dev Yato <span class="highlight">Python Journey</span></h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="subscribe.html" class="nav-link active">Inscreva-se</a>
+                <a href="billing.html" class="nav-link">Planos</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subscribe Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Comece Sua Jornada Hoje</h1>
+            <p class="page-subtitle">Preencha o formulário abaixo e transforme sua carreira</p>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-container">
+                <!-- Benefits Column -->
+                <div class="subscribe-benefits">
+                    <h2>Por que se inscrever?</h2>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✨</div>
+                        <div class="benefit-content">
+                            <h3>Acesso Completo</h3>
+                            <p>Mais de 100 horas de conteúdo exclusivo e projetos práticos</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div class="benefit-content">
+                            <h3>Aprenda no Seu Ritmo</h3>
+                            <p>Estude quando e onde quiser, sem prazos rígidos</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">👥</div>
+                        <div class="benefit-content">
+                            <h3>Comunidade Exclusiva</h3>
+                            <p>Faça parte do Discord com milhares de alunos ativos</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏆</div>
+                        <div class="benefit-content">
+                            <h3>Certificado Oficial</h3>
+                            <p>Certificado reconhecido ao completar o curso</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💬</div>
+                        <div class="benefit-content">
+                            <h3>Suporte Dedicado</h3>
+                            <p>Tire dúvidas com instrutores experientes</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔄</div>
+                        <div class="benefit-content">
+                            <h3>Atualizações Gratuitas</h3>
+                            <p>Receba novos conteúdos e atualizações sem custo adicional</p>
+                        </div>
+                    </div>
+
+                    <div class="guarantee-badge">
+                        <div class="badge-icon">✓</div>
+                        <div class="badge-text">
+                            <strong>Garantia de 30 dias</strong>
+                            <p>100% do seu dinheiro de volta se não ficar satisfeito</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="subscribe-form-container">
+                    <form class="subscribe-form" id="subscribeForm">
+                        <h2>Formulário de Inscrição</h2>
+                        <p class="form-description">Preencha seus dados para começar</p>
+
+                        <div class="form-group">
+                            <label for="fullName">Nome Completo *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Nível de Experiência *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Selecione...</option>
+                                <option value="beginner">Iniciante - Nunca programei</option>
+                                <option value="basic">Básico - Já estudei um pouco</option>
+                                <option value="intermediate">Intermediário - Já fiz alguns projetos</option>
+                                <option value="advanced">Avançado - Busco aperfeiçoamento</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="plan">Plano Desejado *</label>
+                            <select id="plan" name="plan" required>
+                                <option value="">Selecione...</option>
+                                <option value="starter">Starter - R$ 97/mês</option>
+                                <option value="pro">Pro - R$ 147/mês</option>
+                                <option value="enterprise">Enterprise - R$ 997 (vitalício)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goals">Seus Objetivos (opcional)</label>
+                            <textarea id="goals" name="goals" rows="4" placeholder="Conte-nos o que você espera alcançar com o curso..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="referral">Como nos conheceu? (opcional)</label>
+                            <select id="referral" name="referral">
+                                <option value="">Selecione...</option>
+                                <option value="google">Google</option>
+                                <option value="social">Redes Sociais</option>
+                                <option value="friend">Indicação de Amigo</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Quero receber novidades e dicas de Python por email</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>Li e concordo com os <a href="#" class="link">termos de uso</a> e <a href="#" class="link">política de privacidade</a> *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            Inscrever-se Agora
+                        </button>
+
+                        <p class="form-footer">
+                            Já tem uma conta? <a href="#" class="link">Faça login</a>
+                        </p>
+                    </form>
+
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Inscrição Realizada com Sucesso!</h3>
+                        <p>Enviamos um email de confirmação para você. Verifique sua caixa de entrada.</p>
+                        <a href="billing.html" class="btn btn-primary">Ir para Pagamento</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-section">
+                <h3>Junte-se a milhares de alunos satisfeitos</h3>
+                <div class="trust-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Alunos Ativos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9/5</div>
+                        <div class="stat-label">Avaliação Média</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Taxa de Conclusão</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1,500+</div>
+                        <div class="stat-label">Contratados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dev Yato Python Journey</h3>
+                    <p>Aprenda Python com estilo e criatividade inspirados no universo anime.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="subscribe.html">Inscreva-se</a></li>
+                        <li><a href="billing.html">Planos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@devyato.com</li>
+                        <li>💬 Discord Community</li>
+                        <li>🐦 @devyato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dev Yato Python Journey. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
